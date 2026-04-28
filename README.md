@@ -1,25 +1,19 @@
 # pet-adoption-api
 
-A beginner Spring Boot REST API project built while learning from the Spring Guides.
+A beginner Spring Boot REST API project built while learning from the Spring Guides combined with what I'm learning from "Information Management" lectures.
 I followed the guidelines and and adapted the examples to my theme and wrote  my notes from the guides in the code comments.
 
-****What I Explored****
+****What I'm Learning****
 
-Building a RESTful Web Service
-
-Accessing Data with JPA
+- Building a RESTful Web Service
+- Accessing Data with JPA
 
 
 ****Tech Stack****
 
-Java 21
-
-Spring Boot 3.5
-
-Spring Web (MVC)
-
-Spring Data JPA
-
-H2 Database
-
-Maven
+- Java 21
+- Spring Boot 3.5
+- Spring Web (MVC)
+- Spring Data JPA
+- H2 Database
+- Maven
