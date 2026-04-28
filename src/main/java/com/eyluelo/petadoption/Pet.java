@@ -1,8 +1,5 @@
 package com.eyluelo.petadoption;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 /**
  * STEP 1 : define a domain obj
@@ -32,6 +29,11 @@ public class Pet {
     private String breed;
     private int age;
     private boolean adopted;
+
+    //N:1 relationship - every pat has max 1 owner
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
+    private Owner owner;
 
 
     //gettesr and setters
@@ -73,5 +75,13 @@ public class Pet {
 
     public void setAdopted(boolean adopted) {
         this.adopted = adopted;
+    }
+
+    public Owner getOwner() {
+        return owner;
+    }
+
+    public void setOwner(Owner owner) {
+        this.owner = owner;
     }
 }
